@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Contacts</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="page">
+      
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+                  
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                      </li>
+                      
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- RD Navbar Search-->
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      
+      
+      <!-- Map & contacts-->
+      <section class="section bg-gray-100">
+        <div class="untree_co-section" id="contact-section">
+          <div class="container">
+            <div class="row mb-5"  data-aos="fade-up" data-aos-delay="0">
+              <div class="col-12 text-center">
+                <br>
+                <br>
+                <br>
+                <br>
+              
+                
+                <span class="caption">Contact</span>
+                <h2 class="heading">Get In Touch</h2>
+                
+              </div>
+            </div> <!-- /.row -->
+            <div class="row">
+      
+              <div class="col-lg-7">
+      
+      
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" data-aos-delay="100">
+                  <input type="hidden" name="access_key" value="949b8964-c783-4912-882a-3fb42fbf4035">
+                  
+                  <!-- Скрытое поле для reCAPTCHA токена -->
+                  <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                  
+                  <div class="row">
+                      <div class="col-6">
+                          <div class="form-group">
+                              <label for="fname">First name</label>
+                              <input type="text" class="form-control" id="fname" name="fname" required>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="form-group">
+                              <label for="lname">Last name</label>
+                              <input type="text" class="form-control" id="lname" name="lname" required>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <div class="form-group">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+              
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" name="message" cols="30" rows="5" required></textarea>
+                  </div>
+              
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+              
+              <!-- Подключение reCAPTCHA v3 -->
+              <script src="https://www.google.com/recaptcha/api.js?render=411ead0d-487d-4a71-8490-762f8ea8a2fc"></script>
+              <script>
+                  grecaptcha.ready(function() {
+                      grecaptcha.execute('411ead0d-487d-4a71-8490-762f8ea8a2fc', {action: 'submit'}).then(function(token) {
+                          document.getElementById('g-recaptcha-response').value = token;
+                      });
+                  });
+              </script>
+              
+              
+              </div> <!-- /.col-lg-7 -->
+              <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
+                <div class="quick-contact">
+                  <h3 class="h5 mb-4">Contact Info</h3>
+                  <!-- <address class="text-black d-flex"><span class="mt-1 icon-room mr-2"></span><span>43 Raymouth Rd. Baltemoer, London 3910</span></address> -->
+                  <ul class="list-unstyled ul-links mb-4">
+                    <!-- <li><a href="tel://11234567890" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>+1(123)-456-7890</span></a></li> -->
+      
+                    <!-- <li><a href="tel://11234567890" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>+1(123)-456-7890</span></a></li> -->
+      
+                    <li><a href="mailto:sagarrajpurohit336@gmail.com" class="d-flex"><span class="mt-1 icon-envelope mr-2"></span><span>sagarrajpurohit336@gmail.com</span></a></li>
+      
+                    <!-- <li><a href="https://untree.co/" target="_blank" class="d-flex"><span class="mt-1 icon-globe mr-2"></span><span>https://untree.co/</span></a></li> -->
+                  </ul>
+                </div>
+              </div> <!-- /.col-lg-4 -->
+            </div> <!-- /.row -->
+          </div> <!-- /.container -->
+        </div> <!-- /.untree_co-section bg-light -->
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+
+  
+      <footer class="section footer-minimal bg-primary-darken">
+        <div class="container"> 
+          
+            <!-- Rights-->
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Design by <a href="https://www.templatemonster.com">Forex Expert:Invest Smartly</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="preloader"> 
+      <div class="preloader-logo"><img src="images/logo-default-398x45.png" alt="" width="100" height="100"/>
+      </div>
+      <div class="preloader-body">
+        <div id="loadingProgressG">
+          <div class="loadingProgressG" id="loadingProgressG_1"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
